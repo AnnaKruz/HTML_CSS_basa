@@ -48,6 +48,65 @@
     align-items: center;
 }
 
+.menu-list {
+    position: relative;
+}
+
+.menu-list:hover .mega-box {
+    display: block;
+}
+
+.box-menu {
+    padding: 12px;
+}
+
+.mega-box {
+    background-color: #FFF;
+    position: absolute;
+    margin-left: 10px;
+    padding: 38px 34px;
+    box-shadow: 5px 10px 30px rgba(39, 40, 41, 0.2);
+    min-width: 232px;
+    display: none;
+    top: 50px;
+    z-index: 1;
+}
+
+.heading-menu {
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #000;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heading-menu_item {
+    margin-bottom: 12px;
+    color: #F16D7F;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mega-menu_link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-left: 21px;
+    margin-bottom: 16px;
+}
+
+.mega-menu_link:hover {
+    color: #F16D7F;
+}
+
 .promo {
     height: 764px;
     background-color: #F1E4E6;
@@ -293,19 +352,19 @@
 }
 
 .bot__content {
-    height: 341px;
+    padding-top: 104px;
+    padding-bottom: 104px;
     background: #222224;
-    margin-top: 95px;
 }
 
 .company__advantage {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .advantage {
-    margin-top: 103px;
     text-align: center;
 }
 
@@ -565,7 +624,8 @@
     .promo__img {
         display: none;
     }
-    .promo__heading {   
+
+    .promo__heading {
         gap: 2px;
     }
 
